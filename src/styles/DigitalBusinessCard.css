@@ -1,0 +1,186 @@
+/* DigitalBusinessCard.css */
+
+.page {
+    margin-top: 100px;
+    background: #f2f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    min-width: 300px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -80px;
+    border: 4px solid #c7c7d5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .name {
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .subtitle {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+    color: #333;
+  }
+  
+  .button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background: #0056b3;
+  }
+  
+  .link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .qr {
+    width: 160px;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .qr-caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .cancel-btn {
+    background: #6c757d;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .page {
+        background: none;
+        padding: 0;
+    }
+    .modal {
+        width: 70%;
+        max-width: none;
+        padding: 2rem;
+      }
+    
+      .input {
+        font-size: 0.9rem;
+        padding: 10px;
+      }
+
+    
+      .modal-buttons .button {
+        width: 100%;
+        font-size: 0.9rem;
+      }
+    
+
+    .card {
+      padding: 1rem;
+    }
+  
+    .avatar {
+      width: 100px;
+      height: 100px;
+      margin-top: -50px;
+    }
+  
+    .name {
+      font-size: 1.2rem;
+    }
+  
+    .section-title {
+      font-size: 1rem;
+    }
+  
+    .button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .qr {
+      width: 120px;
+    }
+  
+    .qr-caption {
+      font-size: 0.9rem;
+    }
+  }
+  
