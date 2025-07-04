@@ -18,7 +18,7 @@ SMTP_PORT = 587
 SMTP_USERNAME = "urban.project.shenkar@gmail.com"
 
 # Your Gmail App Password (example shown for clarity!)
-SMTP_PASSWORD = "hewf fgja fada mjbq"
+SMTP_PASSWORD = "smtp password"
 
 # Send from this email
 SENDER_EMAIL = SMTP_USERNAME
